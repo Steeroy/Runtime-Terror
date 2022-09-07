@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
-header {
+/* Styling for the nagivation bar starts here */
+nav {
   margin-top: 16px;
   margin-left: 100px;
   margin-right: 100px;
@@ -59,4 +60,76 @@ header {
   background-color: #689ce3;
   border: none;
   border-radius: 5px;
+}
+
+/* Styling for the nagivation bar ends here */
+
+/* Styling for the promoted movie section starts here */
+section {
+  margin: 72px 205px 0px 205px;
+  display: flex;
+  align-items: center;
+}
+
+.promoted_movie_image {
+  width: 295px;
+  height: 455px;
+}
+
+.promoted_movie_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.promoted_movie_contents {
+  margin-left: 125px;
+}
+
+.thortitle_box {
+  width: 400px;
+  height: 216px;
+  padding: 21px 0px 21px 0px;
+}
+
+.thortitle_box img {
+  height: 100%;
+  width: 100%;
+}
+
+.now_showing {
+  font-family: "Oswald", sans-serif;
+  font-size: 59px;
+  font-weight: medium;
+  color: #448fec;
+  margin: 0;
+}
+
+.booking_buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.booking_buttons .book_movie,
+.view_movie {
+  height: 38px;
+  width: 162px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.booking_buttons .book_movie {
+  background-color: #689ce3;
+  color: #204679;
+  margin-right: 20px;
+}
+
+.booking_buttons .view_movie {
+  background-color: #2d4666;
+  color: #8faed8;
 }
