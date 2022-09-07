@@ -6,7 +6,7 @@ const data = {
       release_date: "6-Jul-2022",
       genre: "Action/Sci-fi",
       running_time: "1h 59m",
-      release_state: "now showing",
+      release_state: "now_showing",
       image: "/images/Thor_Love_and_Thunder.png",
     },
     {
@@ -15,7 +15,7 @@ const data = {
       release_date: "19-Aug-2022",
       genre: "Thriller/Adventure",
       running_time: "1h 33m",
-      release_state: "now showing",
+      release_state: "now_showing",
       image: "/images/Beast.jpg",
     },
     {
@@ -24,7 +24,7 @@ const data = {
       release_date: "21-Oct-2022",
       genre: "Action/Fantasy",
       running_time: "2h 15m",
-      release_state: "coming soon",
+      release_state: "coming_soon",
       image: "/images/Black_Adam.jpg",
     },
     {
@@ -33,7 +33,7 @@ const data = {
       release_date: "10-Feb-2022",
       genre: "Action/Thriller",
       running_time: "1h 48m",
-      release_state: "now showing",
+      release_state: "now_showing",
       image: "/images/Blacklight.jpg",
     },
     {
@@ -42,7 +42,7 @@ const data = {
       release_date: "5-Aug-2022",
       genre: "Action/Thriller",
       running_time: "2h 6m",
-      release_state: "now showing",
+      release_state: "now_showing",
       image: "/images/Bullet_Train.png",
     },
     {
@@ -51,7 +51,7 @@ const data = {
       release_date: "12-Aug-2022",
       genre: "Comedy/Fantasy",
       running_time: "1h 54m",
-      release_state: "now showing",
+      release_state: "now_showing",
       image: "/images/Daylight.jpg",
     },
     {
@@ -60,7 +60,7 @@ const data = {
       release_date: "19-Oct-2022",
       genre: "Musical/Drama",
       running_time: "2h 39m",
-      release_state: "coming soon",
+      release_state: "coming_soon",
       image: "/images/Elvis.jpg",
     },
     {
@@ -69,7 +69,7 @@ const data = {
       release_date: "10-Jun-2022",
       genre: "Action/Sci-fi",
       running_time: "2h 27m",
-      release_state: "now showing",
+      release_state: "now_showing",
       image: "/images/Jurassic_World.png",
     },
     {
@@ -78,7 +78,7 @@ const data = {
       release_date: "5-Aug-2022",
       genre: "Comedy/Family",
       running_time: "1h 37m",
-      release_state: "now showing",
+      release_state: "now_showing",
       image: "/images/Luck.png",
     },
     {
@@ -87,7 +87,7 @@ const data = {
       release_date: "12-Apr-2022",
       genre: "Action/Comedy",
       running_time: "1h 45m",
-      release_state: "now showing",
+      release_state: "now_showing",
       image: "/images/Massive_Talent.jpg",
     },
     {
@@ -96,7 +96,7 @@ const data = {
       release_date: "26-Oct-2022",
       genre: "Action/Comedy",
       running_time: "1h 41m",
-      release_state: "coming soon",
+      release_state: "coming_soon",
       image: "/images/Me_Time.png",
     },
     {
@@ -105,7 +105,7 @@ const data = {
       release_date: "1-Oct-2022",
       genre: "Comedy/Adventure",
       running_time: "1h 30m",
-      release_state: "coming soon",
+      release_state: "coming_soon",
       image: "/images/Minions.png",
     },
     {
@@ -114,7 +114,7 @@ const data = {
       release_date: "22-Jul-2022",
       genre: "Horror/Sci-fi",
       running_time: "2h 15m",
-      release_state: "now showing",
+      release_state: "now_showing",
       image: "/images/Nope.jpg",
     },
     {
@@ -123,7 +123,7 @@ const data = {
       release_date: "15-Oct-2022",
       genre: "Action/Fantasy",
       running_time: "1h 41m",
-      release_state: "coming soon",
+      release_state: "coming_soon",
       image: "/images/Samaritan.jpg",
     },
     {
@@ -132,7 +132,7 @@ const data = {
       release_date: "23-Jun-2022",
       genre: "Action/Adventure",
       running_time: "2h 11m",
-      release_state: "now showing",
+      release_state: "now_showing",
       image: "/images/Top_Gun_Maverick.jpg",
     },
   ],
