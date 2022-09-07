@@ -233,3 +233,71 @@ nav {
   padding-left: 16px;
   font-family: "Lato", sans-serif;
 }
+
+/* Styling for the filtered movies section ends here */
+
+/* Styling for the movie details starts here */
+
+.view_details_container {
+  margin: 88px 205px 0px 205px;
+}
+
+.movie_trailer_container {
+  margin: 88px 205px 205px 205px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react_player_trailer {
+  width: 100%;
+  height: 100%;
+}
+
+.view_details_container {
+  display: flex;
+  align-items: center;
+}
+
+.view_movie_image {
+  width: 200%;
+  height: 455px;
+}
+
+.view_movie_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.view_movie_details {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  margin-left: 105px;
+}
+
+.view_movie_details h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 46px;
+  font-weight: medium;
+  color: #9cc7fd;
+  margin: 0px 0px 20px 0px;
+}
+
+.view_movie_details h5 {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #9cc7fd;
+  margin: 0;
+  margin: 0px 0px 20px 0px;
+}
+
+.view_movie_details p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #9cc7fd;
+  margin: 0px 0px 20px 0px;
+}
