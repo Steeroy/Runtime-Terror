@@ -66,10 +66,15 @@ const MainPage = () => {
             <img src={Thortitle} alt={promotedMovie.title} />
           </div>
           <div className="booking_buttons">
-            <Button className="book_movie">
-              <Icon icon="tabler:hand-click" />
-              <span>Book Movie</span>
-            </Button>
+            <Link
+              style={{ textDecoration: "none" }}
+              to={`/movie/book-movie/${promotedMovie.slug}`}
+            >
+              <Button className="book_movie">
+                <Icon icon="tabler:hand-click" />
+                <span>Book Movie</span>
+              </Button>
+            </Link>
             <Link
               style={{ textDecoration: "none" }}
               to={`/movie/${promotedMovie.slug}`}

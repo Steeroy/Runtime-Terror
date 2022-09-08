@@ -28,10 +28,16 @@ const ViewMovie = () => {
         <p>{movie.description}</p>
 
         <div className="booking_buttons">
-          <Button className="book_movie">
-            <Icon icon="akar-icons:pointer-hand" />
-            <span>Book Movie</span>
-          </Button>
+          <Link
+            style={{ textDecoration: "none" }}
+            to={`/movie/book-movie/${slug}`}
+          >
+            <Button className="book_movie">
+              <Icon icon="akar-icons:pointer-hand" />
+              <span>Book Movie</span>
+            </Button>
+          </Link>
+
           <Link
             style={{ textDecoration: "none" }}
             to={`/movie/view-trailer/${movie.slug}`}

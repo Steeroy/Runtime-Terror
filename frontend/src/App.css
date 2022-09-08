@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 /* Styling for the nagivation bar starts here */
+Button {
+  cursor: pointer;
+}
+
 nav {
   margin-top: 16px;
   margin-left: 100px;
@@ -300,4 +304,134 @@ nav {
   font-weight: 400;
   color: #9cc7fd;
   margin: 0px 0px 20px 0px;
+}
+
+/* Styling for the movie details ends here */
+
+/* Styling for the seating starts here */
+
+.choose_seating_container {
+  /* margin: 72px 0px 0px 0px; */
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.seating_image {
+  height: 450px;
+  width: 450px;
+  margin-right: 62px;
+}
+
+.seating_image img {
+  height: 100%;
+  width: 100%;
+}
+
+.seating_details {
+  display: flex;
+  flex-direction: column;
+}
+
+.seating_details h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 26px;
+  color: #9cc7fd;
+}
+
+.seating_details form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.seating_details form input {
+  height: 27px;
+  width: 70%;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  text-align: center;
+  color: #083872;
+  background-color: #949ca5;
+}
+
+.seating_details form button {
+  height: 29px;
+  width: 30%;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  color: #011329;
+  background-color: #9cc7fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
+
+.seating_details form button span {
+  margin-left: 8px;
+}
+
+.seating_details h6 {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #9cc7fd;
+}
+
+.seating_details table {
+  text-align: center;
+}
+
+td,
+th {
+  padding: 8px;
+  border-bottom: 0.5px solid #ddd;
+}
+
+th {
+  color: #9cc7fd;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+td {
+  color: #9cc7fd;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+td button {
+  background-color: #9cc7fd;
+  color: #011329;
+  border: none;
+  border-radius: 2px;
+}
+
+.seating_details h6 span {
+  font-size: 20px;
+}
+
+.proceed_payment {
+  height: 34px;
+  border: none;
+  background-color: #9cc7fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  border-radius: 2px;
+}
+
+.proceed_payment span {
+  margin-left: 16px;
 }

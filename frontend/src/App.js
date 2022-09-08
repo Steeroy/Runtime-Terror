@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import MainPage from "./screens/MainPage";
 import ViewMovie from "./screens/ViewMovie";
 import MovieTrailer from "./screens/MovieTrailer";
+import ChooseSeating from "./screens/ChooseSeating";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         </nav>
         <main>
           <Routes>
+            <Route path="/movie/book-movie/:slug" element={<ChooseSeating />} />
             <Route
               path="/movie/view-trailer/:slug"
               element={<MovieTrailer />}
