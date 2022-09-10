@@ -1,39 +1,40 @@
-import React, { useEffect } from "react";
-import "../App.css";
-import Button from "react-bootstrap/Button";
-import { Icon } from "@iconify/react";
-import data from "../data";
-import Thortitle from "../assets/Thor_Love_and_Thunder_Title.png";
-import { useState } from "react";
-import MovieCard from "../components/MovieCard";
-import axios from "axios";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
+import '../App.css';
+import Button from 'react-bootstrap/Button';
+import { Icon } from '@iconify/react';
+import data from '../data';
+import Thortitle from '../assets/Thor_Love_and_Thunder_Title.png';
+import { useState } from 'react';
+import MovieCard from '../components/MovieCard';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const MainPage = () => {
-  const [moviesBackend, setMoviesBackend] = useState([]);
+  // const [moviesBackend, setMoviesBackend] = useState([]);
 
-  useEffect(() => {
-    const fetchMovies = async () => {
-      const result = await axios.get("/api/movies");
-      setMoviesBackend(result.data);
-    };
-    fetchMovies();
-  }, []);
-
-  //   const promotedMovieBack = moviesBackend.find((movie) => {
-  //     return movie.title === "Thor: Love and Thunder";
-  //   });
+  // useEffect(() => {
+  //   const fetchMovies = async () => {
+  //     const result = await axios.get('/api/movies');
+  //     setMoviesBackend(result.data);
+  //   };
+  //   fetchMovies();
+  // }, []);
 
   const promotedMovie = data.movies.find((movie) => {
-    return movie.title === "Thor: Love and Thunder";
+    return movie.title === 'Thor: Love and Thunder';
   });
 
-  const [active, setActive] = useState("now_showing");
-  const [movieCategory, setMovieCategory] = useState("now_showing");
+  // const promotedMovieBackend = moviesBackend.filter((movie) => {
+  //   return movie.title === 'Thor: Love and Thunder';
+  // });
+
+  const [active, setActive] = useState('now_showing');
+  const [movieCategory, setMovieCategory] = useState('now_showing');
 
   const [movies, setMovies] = useState(
     data.movies.filter((movie) => {
-      return movie.release_state === "now_showing";
+      return movie.release_state === 'now_showing';
     })
   );
 
@@ -61,13 +62,16 @@ const MainPage = () => {
 
         {/* This is the content box */}
         <div className="promoted_movie_contents">
+          <Helmet>
+            <title>{'Main Page'}</title>
+          </Helmet>
           <h1 className="now_showing_title">Now Showing</h1>
           <div className="thortitle_box">
             <img src={Thortitle} alt={promotedMovie.title} />
           </div>
           <div className="booking_buttons">
             <Link
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
               to={`/movie/book-movie/${promotedMovie.slug}`}
             >
               <Button className="book_movie">
@@ -76,7 +80,7 @@ const MainPage = () => {
               </Button>
             </Link>
             <Link
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
               to={`/movie/${promotedMovie.slug}`}
             >
               <Button className="view_movie">
@@ -92,15 +96,15 @@ const MainPage = () => {
       <section className="movies">
         <div className="movie_states">
           <h3
-            onClick={() => filterMovies("now_showing")}
-            className={active === "now_showing" ? active : "deactive"}
+            onClick={() => filterMovies('now_showing')}
+            className={active === 'now_showing' ? active : 'deactive'}
           >
             Now Showing
           </h3>
           <div className="divider"></div>
           <h3
-            onClick={() => filterMovies("coming_soon")}
-            className={active === "coming_soon" ? active : "deactive"}
+            onClick={() => filterMovies('coming_soon')}
+            className={active === 'coming_soon' ? active : 'deactive'}
           >
             Coming Soon
           </h3>

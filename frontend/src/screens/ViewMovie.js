@@ -1,11 +1,12 @@
-import { useParams } from "react-router-dom";
-import React, { useEffect, useState } from "react";
-import "../App.css";
-import Button from "react-bootstrap/Button";
-import { Icon } from "@iconify/react";
-import data from "../data";
-import axios from "axios";
-import { Link } from "react-router-dom";
+import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import '../App.css';
+import Button from 'react-bootstrap/Button';
+import { Icon } from '@iconify/react';
+import data from '../data';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const ViewMovie = () => {
   const params = useParams();
@@ -19,6 +20,9 @@ const ViewMovie = () => {
 
   return (
     <div className="view_details_container">
+      <Helmet>
+        <title>{movie.title}</title>
+      </Helmet>
       <div className="view_movie_image">
         <img src={movie.image} alt={movie.title} />
       </div>
@@ -29,7 +33,7 @@ const ViewMovie = () => {
 
         <div className="booking_buttons">
           <Link
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: 'none' }}
             to={`/movie/book-movie/${slug}`}
           >
             <Button className="book_movie">
@@ -39,7 +43,7 @@ const ViewMovie = () => {
           </Link>
 
           <Link
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: 'none' }}
             to={`/movie/view-trailer/${movie.slug}`}
           >
             <Button className="view_movie">
